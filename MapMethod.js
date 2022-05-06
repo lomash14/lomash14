@@ -28,7 +28,15 @@ console.log(movementsINR); // results the same output usin for of loops
 
 //using ternry operator
 
-const newMov=movements.map((mov,i,arr)=>
-    `movement ${i+1} : you ${mov>0 ? 'deposited' : 'withdrawn'} ${Math.abs(mov)}`
-)
-console.log(newMov); // the shorter way to display
+// const newMov=movements.map((mov,i,arr)=>
+//     `movement ${i+1} : you ${mov>0 ? 'deposited' : 'withdrawn'} ${Math.abs(mov)}`
+// )
+// console.log(newMov); // the shorter way to display
+
+//example
+
+let user="rob Van dam";
+const userName=user.toUpperCase().split(' ').map((name)=>{
+    return name[0]; //displays index 0 of every elemnt of words after merge
+}).join('');
+console.log(userName); //RVD
